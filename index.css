@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    --background-color: #16161d;
+    --text-color: #DDDDDE;
+    --background-color: #1D1D1D;
+    --text-color: #E2E2E2;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+    font-family: 'Lora';
+    font-style: italic;
+    font-size: 0.8em;
+    color: var(--text-color);
+    padding: 0.4em 1em;
+    border-radius: 2em;
+    background-color: transparent;
+    border: 0.03em solid var(--text-color);
+    transition: background-color 500ms ease-in;
+}
+
+button:hover {
+    cursor: pointer;
+    border: none;
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.website-content {
+    padding: 0.2em 3em;
+    font-family: 'Lexend';
+}
+
+.space {
+    height: 4em;
+}
+
+@media screen and (max-width:720px) {
+    body {
+        margin: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-illustration img {
+        display: none;
+    }
+}
+
+
+
+
+header {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lora';
+    font-style: italic;
+    font-size: 1em;
+}
+
+header img {
+    width: 50px;
+    aspect-ratio: 1/1;
+    filter: invert(100%);
+    transition: all 1.2s ease;
+}
+
+header img:hover {
+    width: 60px;
+    aspect-ratio: 1/1;
+    filter: invert(100%) drop-shadow(0.2em 0.2em 4px var(--text-color));
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 0.8em;
+    padding: 0.4em 1.2em;
+    transition: font-size 500ms ease;
+}
+
+nav li:hover {
+    cursor: pointer;
+    font-size: 1.7em;
+}
+
+nav li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 0.075em;
+    background-color: var(--text-color);
+    transition: width 0.4s ease-in-out;
+}
+
+nav li:hover::before {
+    width: 100%;
+}
+
+
+
+#title {
+    display: block;
+    text-align: center;
+    font-size: 5em;
+    padding: 0;
+    margin: 0 1em;
+    font-family: 'Poiret One';
+    z-index: 1;
+}
+
+#subtitle {
+    margin: 0 3em;
+    padding: 1em;
+    outline: 0.03em solid var(--text-color);
+    text-align: center;
+    font-family: 'Lora';
+    font-style: italic;
+    transition: all 500ms ease;
+}
+
+#subtitle:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+#col-1-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#col-1-image img {
+    filter: contrast(80%) grayscale(100%);
+    border-radius: 1em;
+    width: 80%;
+    aspect-ratio: 16/9;
+    margin: 1em;
+    transition: all 500ms ease-in-out;
+}
+
+#col-1-image img:hover {
+    filter: grayscale(0);
+}
+
+.column-2 {
+    padding: 1em;
+}
+
+.header-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.03em solid var(--text-color);
+    border-radius: 0.5em;
+
+}
+
+.header-illustration img {
+    filter: invert(100%);
+    border-radius: 0.5em;
+    width: 100%;
+    aspect-ratio: 4/3;
+    transition: filter 750ms ease-in-out;
+}
+
+.header-illustration img:hover {
+    filter: invert(0%);
+}
+
+
+#featured {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+}
+
+.tile {
+    outline: 0.03em solid var(--text-color);
+    transition: outline 500ms ease-in-out;
+}
+
+.tile:hover {
+    box-shadow: 0.15em 0.15em 2em var(--text-color);
+
+}
+
+.featured-title {
+    transition: background-color 500ms ease-in-out, color 500ms ease;
+    padding: 0.4em;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Lora';
+}
+
+.featured-content {
+
+    font-family: 'Lexend';
+    padding: 1em 3em;
+    color: var(--text-color);
+}
+
+
+.tile:hover>.featured-title {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+
+.tile>button {
+    font-family: 'Lora';
+    font-style: italic;
+    font-size: 0.8em;
+    color: var(--text-color);
+    padding: 0.4em 1em;
+    border-radius: 2em;
+    border: 0.03em solid var(--text-color);
+}
+
+.tile>button:hover {
+    cursor: pointer;
+    border: none;
+    background-color: pink;
+    color: var(--background-color);
+}
+
+#read-more {
+    float: right;
+    position: relative;
+    bottom: 1.5em;
+    right: 1em;
+}
+
+#more {
+    display: none;
+}
