@@ -6,13 +6,9 @@
     --text-color: #E2E2E2;
 }
 
-body{
-
-    background-color: var(--background-color);
+body {
     margin: 0;
-}
-.page {
-    display: grid;
+    background-color: var(--background-color);
     color: var(--text-color);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -54,16 +50,13 @@ button:hover {
 }
 
 @media screen and (max-width:720px) {
-    
-body{
-    background-color: var(--background-color);
-    margin: 0;
-}
-.page {
-    display: grid;
-    color: var(--text-color);
-    grid-template-columns: repeat(1, 1fr);
-}
+    body {
+        margin: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     #col-1-image img{
         display: none;
@@ -280,21 +273,4 @@ nav li:hover::before {
 
 #more {
     display: none;
-}
-footer{
-    text-align: center;
-    color: var(--text-color);
-    border: 0.03em solid var(--text-color);
-    font-size: 1.2em;
-    padding: 0.5em;
-    font-family: 'Lora';
-    margin: 0 1em;
-    font-style: italic;
-    transition: background-color 500ms ease-in;
-    margin-bottom: 1em;
-}
-footer:hover{
-    background-color: #E2E2E2;
-    border: 0.03em solid var(--background-color);
-    color: var(--background-color);
 }
