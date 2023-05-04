@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    --background-color: #16161d;
-    --text-color: #DDDDDE;
+    /* --background-color: #E2E2E2;
+    --text-color: #1D1D1D; */
     --background-color: #1D1D1D;
     --text-color: #E2E2E2;
 }
@@ -58,7 +58,7 @@ button:hover {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    #col-1-image img{
+    #col-1-image img {
         display: none;
     }
 
