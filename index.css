@@ -61,23 +61,27 @@ button:hover {
     #col-1-image img {
         display: none;
     }
-    footer{
+
+    footer {
         position: fixed;
         right: 1em;
         bottom: 0.5em;
     }
-    marquee{
-        width: 200%;
+
+    marquee {
+        display: block;
+        width: 180%;
     }
 }
 
-marquee{
+marquee {
     margin: 0.3em 0;
     font-family: 'Lora';
     font-style: italic;
     color: var(--background-color);
     background-color: var(--text-color);
 }
+
 header {
     padding: 1em;
     display: flex;
