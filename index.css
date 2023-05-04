@@ -6,10 +6,11 @@
     --text-color: #E2E2E2;
 }
 
-body{
+body {
     background-color: var(--background-color);
     margin: 0;
 }
+
 .page {
     display: grid;
     color: var(--text-color);
@@ -45,16 +46,17 @@ button:hover {
 }
 
 @media screen and (max-width:720px) {
-    
-body{
-    background-color: var(--background-color);
-    margin: 0;
-}
-.page {
-    display: grid;
-    color: var(--text-color);
-    grid-template-columns: repeat(1, 1fr);
-}
+
+    body {
+        background-color: var(--background-color);
+        margin: 0;
+    }
+
+    .page {
+        display: grid;
+        color: var(--text-color);
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     #col-1-image img {
         display: none;
@@ -266,7 +268,8 @@ nav li:hover::before {
 #more {
     display: none;
 }
-footer{
+
+footer {
     text-align: center;
     color: var(--text-color);
     border: 0.03em solid var(--text-color);
