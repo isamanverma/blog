@@ -220,6 +220,8 @@ nav li:hover::before {
 
 .featured-title {
     padding: 0.4em;
+    background-color: var(--text-color);
+    color: var(--background-color);
     font-size: 1.2em;
     font-style: italic;
     text-align: center;
@@ -227,7 +229,6 @@ nav li:hover::before {
 }
 
 .featured-content {
-
     font-family: 'Lexend';
     padding: 1em 3em;
     color: var(--text-color);
