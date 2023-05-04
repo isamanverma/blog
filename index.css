@@ -271,6 +271,6 @@ footer{
     color: var(--text-color);
     border: 0.03em solid var(--text-color);
     font-size: 1em;
-    padding: 0.5;
+    padding: 0.5em;
     font-family: 'Lexend';
 }
