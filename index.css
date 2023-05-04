@@ -219,7 +219,6 @@ nav li:hover::before {
 }
 
 .featured-title {
-    transition: background-color 500ms ease-in-out, color 500ms ease;
     padding: 0.4em;
     font-size: 1.2em;
     font-style: italic;
@@ -232,12 +231,6 @@ nav li:hover::before {
     font-family: 'Lexend';
     padding: 1em 3em;
     color: var(--text-color);
-}
-
-
-.tile:hover>.featured-title {
-    background-color: var(--text-color);
-    color: var(--background-color);
 }
 
 
