@@ -145,6 +145,7 @@ nav li:hover::before {
     margin: 0 1em;
     font-family: 'Poiret One';
     z-index: 1;
+    text-shadow: 0.08em 0em #2ae4e75c, -0.08em 0em #f20d0d67;
 }
 
 #subtitle {
