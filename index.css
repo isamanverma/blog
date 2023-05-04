@@ -168,7 +168,7 @@ nav li:hover::before {
     transition: all 1s ease-in-out;
 }
 
-#col-1-image img:hover {
+#col-1-image:hover>img {
     filter: grayscale(0);
 }
 
