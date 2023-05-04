@@ -45,7 +45,7 @@ button:hover {
     height: 4em;
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:450px) {
 
     body {
         background-color: var(--background-color);
@@ -71,6 +71,34 @@ button:hover {
     marquee {
         display: block;
         width: 180%;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+
+    body {
+        background-color: var(--background-color);
+        margin: 0;
+    }
+
+    .page {
+        display: grid;
+        color: var(--text-color);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    html {
+        width: 150%;
+        place-content: center;
+    }
+
+    marquee {
+        display: block;
+        /* width: 135%; */
+    }
+
+    footer {
+        display: hidden;
     }
 }
 
