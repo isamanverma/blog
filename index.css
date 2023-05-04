@@ -76,6 +76,7 @@ button:hover {
 
 marquee {
     margin: 0.3em 0;
+    padding: 0.1em;
     font-family: 'Lora';
     font-style: italic;
     color: var(--background-color);
