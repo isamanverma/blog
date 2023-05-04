@@ -66,8 +66,17 @@ button:hover {
         right: 1em;
         bottom: 0.5em;
     }
+    marquee{
+        width: 200%;
+    }
 }
 
+marquee{
+    margin: 0.3em 0;
+    font-family: 'Poppins';
+    color: var(--background-color);
+    background-color: var(--text-color);
+}
 header {
     padding: 1em;
     display: flex;
