@@ -47,35 +47,19 @@ button:hover {
 
 /* Phone */
 @media screen and (max-width:425px) {
-
-    body {
-        zoom: 100%;
-        background-color: var(--background-color);
-        margin: 0;
-    }
-
-    .page {
-        display: grid;
-        color: var(--text-color);
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    #col-1-image img {
+    marquee {
         display: none;
     }
 
-    footer {
-        background-color: #1D1D1D;
-        position: fixed;
-        right: 1em;
-        bottom: 0.5em;
+    .page {
+        grid-template-columns: repeat(1, 1fr);
     }
-
-    marquee {
-        position: fixed;
-        display: block;
-    }
+footer{
+    display: none;
 }
+}
+
+
 /* Tablet */
 @media screen and (min-width: 426px) and (max-width: 768px) {
 
@@ -91,28 +75,29 @@ button:hover {
     }
 
     html {
-        width: 150%;
         place-content: center;
     }
 
     marquee {
-        display: block;
-        /* width: 135%; */
+        width: 100vw;
     }
 
     footer {
-        display: hidden;
+        display: block;
     }
 }
 
 marquee {
-    margin: 0.3em 0;
-    padding: 0.1em;
+    position: sticky;
+    width: 100vw;
+    margin: 0.1em 0 0.5em 0;
     font-family: 'Lora';
     font-style: italic;
     color: var(--background-color);
     background-color: var(--text-color);
+    padding: 0;
 }
+
 
 header {
     padding: 1em;
