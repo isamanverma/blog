@@ -45,6 +45,7 @@ button:hover {
     height: 4em;
 }
 
+/* Phone */
 @media screen and (max-width:425px) {
 
     body {
@@ -63,6 +64,7 @@ button:hover {
     }
 
     footer {
+        background-color: #1D1D1D;
         position: fixed;
         right: 1em;
         bottom: 0.5em;
@@ -73,7 +75,7 @@ button:hover {
         display: block;
     }
 }
-
+/* Tablet */
 @media screen and (min-width: 426px) and (max-width: 768px) {
 
     body {
