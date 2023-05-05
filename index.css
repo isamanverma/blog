@@ -49,6 +49,7 @@ button:hover {
 @media screen and (max-width:425px) {
 
     body {
+        zoom: 100%;
         background-color: var(--background-color);
         margin: 0;
     }
