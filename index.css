@@ -16,14 +16,6 @@ body {
     user-select: none;
   }
   
-
-  body:active {
-    -webkit-user-select: text; 
-    -moz-user-select: text; 
-    -ms-user-select: text; 
-    user-select: text;
-  }
-  
 .page {
     display: grid;
     color: var(--text-color);
