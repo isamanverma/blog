@@ -45,7 +45,7 @@ button:hover {
     height: 4em;
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:425px) {
 
     body {
         background-color: var(--background-color);
@@ -69,12 +69,12 @@ button:hover {
     }
 
     marquee {
+        position: fixed;
         display: block;
-        width: 180%;
     }
 }
 
-@media screen and (min-width: 451px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
 
     body {
         background-color: var(--background-color);
