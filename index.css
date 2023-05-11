@@ -306,7 +306,7 @@ nav li:hover::before {
 .tile>button:hover {
     cursor: pointer;
     border: none;
-    background-color: pink;
+    background-color: yellow;
     color: var(--background-color);
 }
 
